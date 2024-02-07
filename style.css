@@ -44,7 +44,7 @@ a {
 .container {
   position: relative;
   top: 100px;
-  left: 100px;
+  left: 50px;
 }
 
 .row {
@@ -52,14 +52,24 @@ a {
   flex-wrap: wrap;
 }
 
-#button {
-  background-color: #000000 !important;
-  border-color: #000000;
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: column;
+  background-color: rgba(255, 255, 255, 0);
 }
 
-.collapse {
-  &:not(.show) {
-    display: none;
+.flex-item {
+  flex-basis: 200px; /* Initial size of the flex item */
+  background-color: rgba(238, 238, 238, 0);
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-item {
+    flex-basis: calc(50% - 20px);
   }
 }
-

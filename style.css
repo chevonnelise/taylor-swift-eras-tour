@@ -1,33 +1,36 @@
-body, html {
+body,
+html {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-style: normal;
   height: 100%;
   margin: 0;
-  padding:0;
+  padding: 0;
+  display: flex;
 }
 
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero-image.jpg"); 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero-image.jpg");
   /* Full width */
-  height:100%;
+  height: 100%;
   width: 100vw;
   /* Set background image size to cover the entire container */
   background-size: cover;
   /* Center the background image */
   /* Repeated background image */
-} 
+}
 
 .hero-image2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero-image.jpg"); 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero-image.jpg");
   /* Full width */
   width: 100vw;
   /* Set background image size to cover the entire container */
   background-size: cover;
-  /* Center the background image */
-  /* Repeated background image */
-} 
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
 
 .hero-text {
   text-align: center;
@@ -54,19 +57,32 @@ a {
   color: white;
 }
 
-.row {
-  padding: 30px;
-  flex-wrap: wrap;
+.beige {
+  background-color: #270b02;
+  border-color: #270b02;
+  font-size: 20px;
 }
 
-.container {
+/* .row {
+  margin-top: 5%;
+}*/
+
+
+/* .container {
   display: flex;
   justify-content: center;
-  flex-wrap: column;
-  background-color: rgba(255, 255, 255, 0);
-  position: relative;
-  margin-top: 3%;
-  padding: 10px;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding:70px 0px 70px 0px;
+} */
+
+.album-card {
+  width: 14rem;
+}
+
+.paddingtop {
+  padding-top: 5rem;
 }
 
 .btn-primary {
@@ -86,43 +102,64 @@ a {
   background-color: rgba(238, 238, 238, 0);
   color: #fff;
   padding: 10px;
-  margin: 5px;
+  /* margin-top: 5%; */
   text-align: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
   .flex-item {
     flex-basis: calc(50% - 20px);
   }
+  .album-card {
+    width: 100%;
+  }
+  .hero-image2 {
+    background-image: none;
+  }
+  .container {
+    margin-top: 15%;
+  }
 }
 
 .card-body {
-  background-color: rgb(255, 255, 255); /* Changing text color to black */
+  background-color: rgb(255, 255, 255);
+  /* Changing text color to black */
   overflow-y: auto;
   max-height: 130px;
-  padding: 10px; /* Adding padding to the card content */
+  padding: 10px;
+  /* Adding padding to the card content */
 }
 
 .card-title {
-  color:#8a8a8a;
+  color: #8a8a8a;
 }
 
 .card-text {
-  color:#8a8a8a;
+  color: #8a8a8a;
 }
 
 .custom-collapse-button {
-  color: rgb(255, 255, 255); /* Changing text color to black */
-      height: 30vh; /* Setting the height of the button */
-      width: 60vh; /* Setting the width of the button */
-      font-size: 50px; /* Setting the font size of the button text */
+  margin-top: 15%;
+  color: rgb(255, 255, 255);
+  background-color: #421202;
+  border-color: #270b02;
+  height: 15vh;
+  width: 40vh;
+  font-size: 30px;
 }
 
 .card {
-  margin-bottom: 15px; /* Adding space between cards */
+  margin-bottom: 15px;
+  /* Adding space between cards */
 }
 
-button, select {
+button,
+select {
   text-transform: none;
   border-radius: 5px;
+}
+
+.navbar {
+  width: 100vw;
 }

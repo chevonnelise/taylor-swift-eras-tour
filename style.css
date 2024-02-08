@@ -83,7 +83,6 @@ a {
 }
 
 .flex-item {
-  flex-basis: 200px; /* Initial size of the flex item */
   background-color: rgba(238, 238, 238, 0);
   color: #fff;
   padding: 10px;

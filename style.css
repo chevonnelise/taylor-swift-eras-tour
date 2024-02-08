@@ -65,6 +65,14 @@ a {
   border-color: #000000;
 }
 
+.btn-secondary {
+  background-color: #270b02 !important;
+  border-color: #000000;
+  width: 500px;
+  height: 200px;
+  font-size: 50px;
+}
+
 .flex-item {
   flex-basis: 200px; /* Initial size of the flex item */
   background-color: rgba(238, 238, 238, 0);
@@ -78,4 +86,25 @@ a {
   .flex-item {
     flex-basis: calc(50% - 20px);
   }
+}
+
+.card-body {
+  background-color: rgb(255, 255, 255); /* Changing text color to black */
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.card-title {
+  color:#8a8a8a;
+}
+
+.card-text {
+  color:#8a8a8a;
+}
+
+.custom-collapse-button {
+  color: rgb(255, 255, 255); /* Changing text color to black */
+      height: 30vh; /* Setting the height of the button */
+      width: 60vh; /* Setting the width of the button */
+      font-size: 50px; /* Setting the font size of the button text */
 }

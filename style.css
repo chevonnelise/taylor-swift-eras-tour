@@ -8,12 +8,16 @@ body, html {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero-image.jpg"); 
-  width: 100vw;
-  height: 100vh; 
+  /* Full height */
+  height: 100vh;
+  /* Full width */
+  width: 100%;
+  /* Set background image size to cover the entire container */
+  background-size: cover;
+  /* Center the background image */
   background-position: center;
+  /* Remove any repeated background image */
   background-repeat: no-repeat;
-  background-size: cover; 
-  position: relative; 
 } 
 
 .hero-text {
@@ -89,6 +93,7 @@ a {
   background-color: rgb(255, 255, 255); /* Changing text color to black */
   overflow-y: auto;
   max-height: 200px;
+  padding: 20px; /* Adding padding to the card content */
 }
 
 .card-title {
@@ -104,4 +109,8 @@ a {
       height: 30vh; /* Setting the height of the button */
       width: 60vh; /* Setting the width of the button */
       font-size: 50px; /* Setting the font size of the button text */
+}
+
+.card {
+  margin-bottom: 20px; /* Adding space between cards */
 }

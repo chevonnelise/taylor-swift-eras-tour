@@ -7,17 +7,26 @@ body, html {
   padding:0;
 }
 
+
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero-image.jpg"); 
   /* Full width */
-  height:100vh;
+  height:100%;
   width: 100vw;
   /* Set background image size to cover the entire container */
   background-size: cover;
   /* Center the background image */
-  background-position: center;
-  /* Remove any repeated background image */
-  background-repeat: no-repeat;
+  /* Repeated background image */
+} 
+
+.hero-image2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero-image.jpg"); 
+  /* Full width */
+  width: 100vw;
+  /* Set background image size to cover the entire container */
+  background-size: cover;
+  /* Center the background image */
+  /* Repeated background image */
 } 
 
 .hero-text {

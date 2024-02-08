@@ -44,7 +44,7 @@ a {
   display: inline-block;
   padding: 10px 25px;
   color: black;
-  background-color: #ddd;
+  background-color: #efefef;
   text-align: center;
   cursor: pointer;
 }
@@ -100,7 +100,7 @@ a {
 .card-body {
   background-color: rgb(255, 255, 255); /* Changing text color to black */
   overflow-y: auto;
-  max-height: 70px;
+  max-height: 130px;
   padding: 10px; /* Adding padding to the card content */
 }
 
@@ -121,4 +121,9 @@ a {
 
 .card {
   margin-bottom: 15px; /* Adding space between cards */
+}
+
+button, select {
+  text-transform: none;
+  border-radius: 5px;
 }
